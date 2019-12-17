@@ -17,6 +17,10 @@
 		05E6E1A723A272970097D035 /* NetworkLayer_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1A623A272970097D035 /* NetworkLayer_RxSwiftUITests.swift */; };
 		05E6E1B623A2D7C90097D035 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1B523A2D7C90097D035 /* HTTPMethods.swift */; };
 		05E6E1B723A2D7C90097D035 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1B523A2D7C90097D035 /* HTTPMethods.swift */; };
+		05E6E1B923A2D8080097D035 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1B823A2D8080097D035 /* NetworkLayer.swift */; };
+		05E6E1BA23A2D8080097D035 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1B823A2D8080097D035 /* NetworkLayer.swift */; };
+		05E6E1BC23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1BB23A2DA320097D035 /* NetworkLayerEncodable.swift */; };
+		05E6E1BD23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E1BB23A2DA320097D035 /* NetworkLayerEncodable.swift */; };
 		C04D5B9626DF355E8765EE5D /* Pods_NetworkLayer_RxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9883F543E7EFB2ECEB5D8A /* Pods_NetworkLayer_RxSwiftTests.framework */; };
 		DD0F3B6BAD35D9CAB56617E9 /* Pods_NetworkLayer_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2802FEA17E4935F173E599 /* Pods_NetworkLayer_RxSwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,8 @@
 		05E6E1A623A272970097D035 /* NetworkLayer_RxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer_RxSwiftUITests.swift; sourceTree = "<group>"; };
 		05E6E1A823A272970097D035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E6E1B523A2D7C90097D035 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		05E6E1B823A2D8080097D035 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		05E6E1BB23A2DA320097D035 /* NetworkLayerEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerEncodable.swift; sourceTree = "<group>"; };
 		166D80334F9B0D1FA10B1249 /* Pods-NetworkLayer_RxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer_RxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayer_RxSwiftTests/Pods-NetworkLayer_RxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2802FEA17E4935F173E599 /* Pods_NetworkLayer_RxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayer_RxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA8A5C59A38740F7DBEA31 /* Pods-NetworkLayer_RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer_RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayer_RxSwift/Pods-NetworkLayer_RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				05E6E1B523A2D7C90097D035 /* HTTPMethods.swift */,
+				05E6E1B823A2D8080097D035 /* NetworkLayer.swift */,
+				05E6E1BB23A2DA320097D035 /* NetworkLayerEncodable.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -416,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E6E1B923A2D8080097D035 /* NetworkLayer.swift in Sources */,
 				05E6E18923A272960097D035 /* ViewController.swift in Sources */,
 				05E6E18723A272960097D035 /* AppDelegate.swift in Sources */,
+				05E6E1BC23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */,
 				05E6E1B623A2D7C90097D035 /* HTTPMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E6E1BA23A2D8080097D035 /* NetworkLayer.swift in Sources */,
 				05E6E1B723A2D7C90097D035 /* HTTPMethods.swift in Sources */,
+				05E6E1BD23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */,
 				05E6E19C23A272970097D035 /* NetworkLayer_RxSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -74,7 +74,7 @@ class NetworkLayer: NSObject, URLSessionDelegate {
         //Constructing Data Task.
         
         return urlSesssion.rx.data(request: urlRequest).map({data -> T in
-            try JSONDecoder().decode(T.self, from: data)
+           try JSONDecoder().decode(T.self, from: data)
         })
     }
 }

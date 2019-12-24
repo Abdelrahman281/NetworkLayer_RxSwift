@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import RxSwift
 @testable import NetworkLayer_RxSwift
 
 class NetworkLayer_RxSwiftTests: XCTestCase {
@@ -19,15 +20,31 @@ class NetworkLayer_RxSwiftTests: XCTestCase {
         super.tearDown()
     }
     
+    
+    //Sample function for Unit Testing.
+    
     func testCallDataServices() {
         let urlPath = "https://testingq.getsandbox.com/User"
+        
+        //Creating XCTestExpectation for expecting API Success.
         let promise = expectation(description: "API Call Succeeded")
         
-        let observable = NetworkLayer.shared.callDataService(urlPath: urlPath, method: HTTPMethod.GET, timeOutInterval: 20.0, responseClass: User.self)
-        if let observableData = observable {
-            observableData.subscribe(onNext:{ user in
-            print(user.iD)
-            }).dispose()
-        }
+        let disposeBag = DisposeBag()
+        
+        NetworkLayer.shared.callDataService(urlPath: urlPath, method: HTTPMethod.GET, timeOutInterval: 20.0, responseClass: User.self)?.subscribe(onNext: { user in
+            print("User: \(user.iD)")
+            
+            //Matched the expectation.
+            promise.fulfill()
+            
+        }, onError: { error in
+            print("hError: \(error)")
+            
+            //Failure case.
+            XCTFail()
+            
+        }).disposed(by: disposeBag)
+        
+        wait(for: [promise], timeout: 20.0)
     }
 }

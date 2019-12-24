@@ -35,7 +35,7 @@ class NetworkLayer: NSObject, URLSessionDelegate {
     
     //Main Function For Calling Data Services.
     
-    func callDataService<T: Decodable>(urlPath: String, method: HTTPMethod, timeOutInterval: TimeInterval, headers: [String: String]? = nil, postData: NetworkLayerEncodable?) -> Observable<T>? {
+    func callDataService<T: Decodable>(urlPath: String, method: HTTPMethod, timeOutInterval: TimeInterval, headers: [String: String]? = nil, postData: NetworkLayerEncodable? = nil, responseClass: T.Type) -> Observable<T>? {
         
         
         //URL Encoding.

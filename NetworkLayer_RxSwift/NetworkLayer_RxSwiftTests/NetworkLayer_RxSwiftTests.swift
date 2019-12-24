@@ -18,4 +18,16 @@ class NetworkLayer_RxSwiftTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testCallDataServices() {
+        let urlPath = "https://testingq.getsandbox.com/User"
+        let promise = expectation(description: "API Call Succeeded")
+        
+        let observable = NetworkLayer.shared.callDataService(urlPath: urlPath, method: HTTPMethod.GET, timeOutInterval: 20.0, responseClass: User.self)
+        if let observableData = observable {
+            observableData.subscribe(onNext:{ user in
+            print(user.iD)
+            }).dispose()
+        }
+    }
 }

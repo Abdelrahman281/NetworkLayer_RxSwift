@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		05B844245CF503DE09DB3626 /* Pods_NetworkLayer_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B197D84265246C6A069415A /* Pods_NetworkLayer_RxSwift.framework */; };
+		05CD368923AB6348007B22F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CD368823AB6348007B22F7 /* User.swift */; };
+		05CD368A23AB6348007B22F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CD368823AB6348007B22F7 /* User.swift */; };
+		05CD368C23AB739A007B22F7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CD368B23AB739A007B22F7 /* URLSessionMock.swift */; };
+		05CD368D23AB739A007B22F7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CD368B23AB739A007B22F7 /* URLSessionMock.swift */; };
 		05E6E18723A272960097D035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E18623A272960097D035 /* AppDelegate.swift */; };
 		05E6E18923A272960097D035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E18823A272960097D035 /* ViewController.swift */; };
 		05E6E18C23A272960097D035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E6E18A23A272960097D035 /* Main.storyboard */; };
@@ -43,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05CD368823AB6348007B22F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05CD368B23AB739A007B22F7 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		05E6E18323A272960097D035 /* NetworkLayer_RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer_RxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E6E18623A272960097D035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E6E18823A272960097D035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +164,8 @@
 				05E6E1B523A2D7C90097D035 /* HTTPMethods.swift */,
 				05E6E1B823A2D8080097D035 /* NetworkLayer.swift */,
 				05E6E1BB23A2DA320097D035 /* NetworkLayerEncodable.swift */,
+				05CD368823AB6348007B22F7 /* User.swift */,
+				05CD368B23AB739A007B22F7 /* URLSessionMock.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -426,9 +434,11 @@
 			files = (
 				05E6E1B923A2D8080097D035 /* NetworkLayer.swift in Sources */,
 				05E6E18923A272960097D035 /* ViewController.swift in Sources */,
+				05CD368923AB6348007B22F7 /* User.swift in Sources */,
 				05E6E18723A272960097D035 /* AppDelegate.swift in Sources */,
 				05E6E1BC23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */,
 				05E6E1B623A2D7C90097D035 /* HTTPMethods.swift in Sources */,
+				05CD368C23AB739A007B22F7 /* URLSessionMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,9 +446,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CD368D23AB739A007B22F7 /* URLSessionMock.swift in Sources */,
 				05E6E1BA23A2D8080097D035 /* NetworkLayer.swift in Sources */,
 				05E6E1B723A2D7C90097D035 /* HTTPMethods.swift in Sources */,
 				05E6E1BD23A2DA320097D035 /* NetworkLayerEncodable.swift in Sources */,
+				05CD368A23AB6348007B22F7 /* User.swift in Sources */,
 				05E6E19C23A272970097D035 /* NetworkLayer_RxSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
